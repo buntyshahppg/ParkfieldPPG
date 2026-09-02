@@ -2,11 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta
     name="description"
@@ -23,6 +19,8 @@
       --text: #153226;
       --muted-text: #587065;
       --background: #eff8f2;
+      --mustard: #e1ad01;
+      --mustard-hover: #c99700;
     }
 
     * {
@@ -123,7 +121,6 @@
 
     .button:hover {
       transform: translateY(-2px);
-      background: var(--green);
       box-shadow: 0 10px 22px rgba(0, 103, 71, 0.2);
     }
 
@@ -167,15 +164,17 @@
       background: #08783b;
     }
 
+    /* Only the website button is mustard yellow */
     .website {
-      color: var(--dark-green);
-      background: white;
-      border-color: var(--dark-green);
+      color: #332600;
+      background: var(--mustard);
+      border-color: var(--mustard);
     }
 
     .website:hover {
-      color: white;
-      background: var(--dark-green);
+      color: #211900;
+      background: var(--mustard-hover);
+      border-color: var(--mustard-hover);
     }
 
     footer {
