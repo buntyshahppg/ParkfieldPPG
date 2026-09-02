@@ -1,18 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Connect with Parkfield Patient Participation Group online.">
+
+  <meta
+    name="description"
+    content="Connect with Parkfield Patient Participation Group online."
+  >
+
   <title>Parkfield PPG | Connect With Us</title>
 
   <style>
     :root {
-      --green-dark: #006747;
+      --dark-green: #006747;
       --green: #168447;
-      --green-light: #78be20;
-      --ink: #153226;
-      --muted: #587065;
+      --light-green: #78be20;
+      --text: #153226;
+      --muted-text: #587065;
+      --background: #eff8f2;
     }
 
     * {
@@ -22,15 +28,17 @@
     body {
       min-height: 100vh;
       margin: 0;
-      display: grid;
-      place-items: center;
-      padding: 28px 16px;
-      color: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px 16px;
+      color: var(--text);
       font-family: Arial, Helvetica, sans-serif;
+
       background:
         radial-gradient(
           circle at 12% 10%,
-          rgba(120, 190, 32, 0.24),
+          rgba(120, 190, 32, 0.25),
           transparent 30%
         ),
         radial-gradient(
@@ -38,157 +46,12 @@
           rgba(0, 103, 71, 0.18),
           transparent 34%
         ),
-        #eff8f2;
+        var(--background);
     }
 
     .card {
-      width: min(100%, 540px);
-      padding: clamp(28px, 6vw, 46px);
+      width: 100%;
+      max-width: 540px;
+      padding: 38px 30px;
       text-align: center;
-      background: rgba(255, 255, 255, 0.94);
-      border: 1px solid rgba(0, 103, 71, 0.13);
-      border-radius: 28px;
-      box-shadow: 0 20px 55px rgba(0, 66, 43, 0.16);
-    }
-
-    .logo {
-      display: block;
-      width: min(100%, 390px);
-      height: auto;
-      margin: 0 auto 22px;
-    }
-
-    h1 {
-      margin: 0;
-      color: var(--green-dark);
-      font-size: clamp(1.8rem, 6vw, 2.5rem);
-      line-height: 1.12;
-    }
-
-    .intro {
-      max-width: 430px;
-      margin: 14px auto 26px;
-      color: var(--muted);
-      font-size: 1.04rem;
-      line-height: 1.55;
-    }
-
-    .links {
-      display: grid;
-      gap: 14px;
-    }
-
-    .button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 58px;
-      padding: 14px 20px;
-      color: white;
-      font-size: 1.04rem;
-      font-weight: 700;
-      text-decoration: none;
-      background: var(--green-dark);
-      border: 2px solid var(--green-dark);
-      border-radius: 16px;
-      transition:
-        transform 0.18s ease,
-        box-shadow 0.18s ease,
-        background 0.18s ease;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-      background: var(--green);
-      box-shadow: 0 10px 22px rgba(0, 103, 71, 0.18);
-    }
-
-    .button:focus-visible {
-      outline: 4px solid rgba(120, 190, 32, 0.45);
-      outline-offset: 3px;
-    }
-
-    .button.secondary {
-      color: var(--green-dark);
-      background: white;
-    }
-
-    footer {
-      margin-top: 27px;
-      color: var(--muted);
-      font-size: 0.84rem;
-      line-height: 1.45;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .button {
-        transition: none;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <main class="card">
-
-    <img
-      class="logo"
-      src="logo.png"
-      alt="Parkfield Patient Participation Group logo"
-    >
-
-    <h1>Connect with Parkfield PPG</h1>
-
-    <p class="intro">
-      Follow Parkfield Patient Participation Group for local health
-      information, community updates and opportunities to have your say.
-    </p>
-
-    <nav class="links" aria-label="Parkfield PPG links">
-
-      <a
-        class="button"
-        href="https://www.facebook.com/parkfieldppg"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Facebook
-      </a>
-
-      <a
-        class="button"
-        href="https://www.instagram.com/parkfieldppg"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Instagram
-      </a>
-
-      <a
-        class="button"
-        href="https://whatsapp.com/channel/0029VaZ2bJBFSAszuLtYDV1b"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        WhatsApp Channel
-      </a>
-
-      <a
-        class="button secondary"
-        href="https://www.parkfieldmedicalcentre.co.uk/practice-information/patient-participation-group-ppg/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Parkfield Medical Centre PPG Page
-      </a>
-
-    </nav>
-
-    <footer>
-      Parkfield Patient Participation Group works with patients and the
-      practice to support communication and help improve local health services.
-    </footer>
-
-  </main>
-</body>
-</html>
+      background: rgba(255, 
